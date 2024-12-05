@@ -1,0 +1,13 @@
+import React from 'react'
+
+function Page5() {
+  return (
+    <div className='h-[99vh] md:w-full md:p-2 lg:p-3 px-2 w-[110vw]'>
+        <div className="h-full w-full bg-black  md:rounded-[4.55vw] md:px-[40px]  px-[19px] lg:px-[67px] lg:rounded-[2.5vw] rounded-[7.5vw] shadow-[0_0_6px_2px_#BBBBBB] ">
+            
+        </div>
+    </div>
+  )
+}
+
+export default Page5

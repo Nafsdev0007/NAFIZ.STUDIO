@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: ANZO1;
+  src: url(../public/file.1.woff2);
+}
+@font-face {
+  font-family: ANZO2;
+  src: url(../public/file.2.woff2);
+}
+@font-face {
+  font-family: ANZO3;
+  src: url(../public/file.3.woff2);
+}
+@font-face {
+  font-family: ANZO4;
+  src: url(../public/file.4.woff2);
+}
+@font-face {
+  font-family: ANZO5;
+  src: url(../public/file.5.woff2);
+}
+@font-face {
+  font-family: MADEFOR;
+  src: url(../public/madefor-text.var.original.woff2);
+}
+
+.page1-floatingtext-h1{
+  @apply md:text-[4.2vw] text-[23.4vw] leading-[22vw] tracking-wide md:tracking-normal font-[ANZO5] md:leading-[4vw] md:font-[ANZO1]
+}
+#floating-txt{
+  width: fit-content;
+}
+#page1-inner{
+  position: relative;
+  perspective: 1300px;
+}
+.main-color{
+  color: #fafafa;
+}
+@keyframes pulse-scale{
+  0%,100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+}
+#hire-me-btn{
+  animation: pulse-scale 1.3s ease-in-out infinite;
+}
+#sandbox-1{
+  position: relative;
+  perspective: 3500px;
+}
+
+
+
+/* Scroll Stuff */
+
+
+.scroll-down #page1-inner .mobile-nav{
+    transform: translate3d(0,-100,0);
+}
+.sun{
+  animation: sun 5.5s infinite linear;
+}
+.sun-mobile{
+  animation: sun 7s infinite linear;
+}
+
+@keyframes sun{
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
