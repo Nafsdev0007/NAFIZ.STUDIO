@@ -5,7 +5,7 @@ import React from 'react'
 function Footer() {
 
     useGSAP(()=>{
-        gsap.from(".react",{
+        gsap.to(".react",{
             rotate:-360,
             repeat:-1,
             duration:8
